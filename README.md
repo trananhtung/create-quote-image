@@ -21,7 +21,7 @@ npm i create-quote-image
 Import the package:
 
 ```js
-import createQuoteImage from 'create-quote-image';
+const createQuoteImage = require('create-quote-image').default;
 
 const quote = {
   text: 'This is a quote',
