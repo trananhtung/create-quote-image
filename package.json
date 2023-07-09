@@ -1,0 +1,34 @@
+{
+  "name": "create-quote-image",
+  "version": "1.0.0",
+  "description": "Transform words into captivating visuals with our GitHub repository! Easily generate quote images.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trananhtung/create-quote-image.git"
+  },
+  "keywords": [
+    "quote",
+    "image",
+    "create",
+    "facebook",
+    "story"
+  ],
+  "author": "Tung Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trananhtung/create-quote-image/issues"
+  },
+  "homepage": "https://github.com/trananhtung/create-quote-image#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "node-html-to-image": "^3.3.0"
+  }
+}
