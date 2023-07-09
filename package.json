@@ -2,7 +2,7 @@
   "name": "create-quote-image",
   "version": "1.0.0",
   "description": "Transform words into captivating visuals with our GitHub repository! Easily generate quote images.",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "test",
     "tsc": "tsc"
