@@ -1,6 +1,6 @@
 {
   "name": "create-quote-image",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Transform words into captivating visuals with our GitHub repository! Easily generate quote images.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,7 +29,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "app-root-path": "^3.1.0",
     "node-html-to-image": "^3.3.0"
   }
 }

@@ -1,6 +1,3 @@
-import path from 'path';
-import appRootPath from 'app-root-path';
-
 import nodeHtmlToImage from 'node-html-to-image';
 import { getRandomColor } from './utils/random';
 
@@ -9,15 +6,14 @@ interface Quote {
   author: string
 }
 
-export  default async function createQuoteImage(quote: Quote, out?: string) {
+export  default async function createQuoteImage(quote: Quote, out: string) {
   const color = getRandomColor();
   const { textColor, background, authorColor } = color;
   const {text, author} = quote;
 
-  const randomImageNameByTime = out || path.join(appRootPath.path, 'images', `image-${Date.now()}.png`);
 
   await nodeHtmlToImage({
-    output: randomImageNameByTime,
+    output: out,
     html: `<html>
         <head>
           <link rel="preconnect" href="https://fonts.googleapis.com">
