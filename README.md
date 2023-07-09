@@ -3,9 +3,8 @@
 ## Description
 
 This is a simple package to create a quote image from a given text. like this:
-<div>
-<img src="./assets/quote.png" width="500"/>
-</div>
+
+<img src="assets/quote.png" width="500"/>
 
 ## Features
 
