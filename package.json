@@ -1,6 +1,6 @@
 {
   "name": "create-quote-image",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Transform words into captivating visuals with our GitHub repository! Easily generate quote images.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
