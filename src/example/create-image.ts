@@ -5,4 +5,4 @@ const quote = {
   author: 'Walt Disney'
 }
 
-createImage(quote, 'example.png');
+createImage(quote, 'example.png', createImage.colors[2]);

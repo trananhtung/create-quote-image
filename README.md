@@ -18,7 +18,7 @@ Install packages:
 npm i create-quote-image
 ```
 
-Import the package:
+Use random color:
 
 ```js
 const createQuoteImage = require('create-quote-image').default;
@@ -30,4 +30,18 @@ const quote = {
 
 createQuoteImage(quote, 'path/to/image.png');
 ```
+
+Customize color:
+
+```js
+const createQuoteImage = require('create-quote-image').default;
+
+const quote = {
+  text: 'This is a quote',
+  author: 'Me',
+}
+
+createQuoteImage(quote, 'path/to/image.png', createQuoteImage.colors[2]);
+```
+
 

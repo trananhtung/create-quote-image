@@ -1,16 +1,21 @@
 import nodeHtmlToImage from 'node-html-to-image';
 import { getRandomColor } from './utils/random';
 
+import colors, { Color } from './constants/color';
+
 interface Quote {
-  text: string
-  author: string
+  text: string;
+  author: string;
 }
 
-export  default async function createQuoteImage(quote: Quote, out: string) {
-  const color = getRandomColor();
-  const { textColor, background, authorColor } = color;
-  const {text, author} = quote;
-
+export default async function createQuoteImage(
+  quote: Quote,
+  out: string,
+  color?: Color
+) {
+  const { text, author } = quote;
+  const appliedColor = color ?? getRandomColor();
+  const { background, textColor, authorColor } = appliedColor;
 
   await nodeHtmlToImage({
     output: out,
@@ -58,10 +63,9 @@ export  default async function createQuoteImage(quote: Quote, out: string) {
       `,
     puppeteerArgs: {
       headless: true,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-      ],
-    },
-  })
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    }
+  });
 }
+
+createQuoteImage.colors = colors;
