@@ -29,6 +29,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "node-html-to-image": "^3.3.0"
+    "node-html-to-image": "^5.0.0"
   }
 }
